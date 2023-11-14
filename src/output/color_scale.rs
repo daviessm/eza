@@ -156,7 +156,7 @@ fn update_information_recursively(
                         r,
                     );
                 }
-                Err(_) => todo!(),
+                Err(e) => println!("file: {:?}, err: {:?}", file.path, e),
             }
         };
     }
